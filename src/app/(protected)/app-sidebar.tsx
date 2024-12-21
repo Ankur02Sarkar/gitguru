@@ -59,7 +59,7 @@ export function AppSidebar() {
         <div className="flex items-center gap-2">
           <Image src="/logo-nobg.png" alt="Logo" width={40} height={40} />
           {open && (
-            <h1 className="text-xl font-bold text-primary/80">Dionysus</h1>
+            <h1 className="text-xl font-bold text-primary/80">Git Guru</h1>
           )}
         </div>
       </SidebarHeader>

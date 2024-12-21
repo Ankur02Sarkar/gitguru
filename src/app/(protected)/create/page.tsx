@@ -60,7 +60,7 @@ const CreatePage = () => {
             Link your GitHub Repository
           </h1>
           <p className="text-sm text-muted-foreground">
-            Enter the URL of your GitHub repository to link it to Dionysus
+            Enter the URL of your GitHub repository to link it to Git Guru
           </p>
         </div>
         <div className="h-4"></div>

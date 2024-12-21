@@ -15,9 +15,9 @@ import { Download } from "lucide-react";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY!,
-  authDomain: "dionysus-ph.firebaseapp.com",
-  projectId: "dionysus-ph",
-  storageBucket: "dionysus-ph.firebasestorage.app",
+  authDomain: "gitguru-ph.firebaseapp.com",
+  projectId: "gitguru-ph",
+  storageBucket: "gitguru-ph.firebasestorage.app",
   messagingSenderId: "685712026525",
   appId: "1:685712026525:web:b14f88ecf650a753cc5d74",
 };

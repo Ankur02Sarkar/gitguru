@@ -62,7 +62,7 @@ const AskQuestionCard = () => {
               <DialogTitle>
                 <Image
                   src="/logo-nobg.png"
-                  alt="dionysus"
+                  alt="gitguru"
                   width={40}
                   height={40}
                 />
@@ -128,7 +128,7 @@ const AskQuestionCard = () => {
             />
             <div className="h-4"></div>
             <Button type="submit" disabled={loading}>
-              Ask Dionysus !
+              Ask Git Guru !
             </Button>
           </form>
         </CardContent>
