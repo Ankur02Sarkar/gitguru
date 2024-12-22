@@ -98,7 +98,7 @@ export function AppSidebar() {
                 return (
                   <SidebarMenuItem key={project.name}>
                     <SidebarMenuButton asChild>
-                      <div onClick={() => setProjectId(project.id)}>
+                      <div onClick={() => setProjectId(project.id)} className="cursor-pointer">
                         <div
                           className={cn(
                             "rounded-sm border size-6 flex items-center justify-center text-sm bg-white text-primary",
