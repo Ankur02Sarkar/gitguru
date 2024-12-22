@@ -24,7 +24,9 @@ const CreatePage = () => {
     if (!!checkCredits.data) {
       createProject.mutate(
         {
-          githubUrl: data.repoUrl,
+          githubUrl: data.repoUrl.endsWith(".git")
+            ? data.repoUrl.slice(0, -4)
+            : data.repoUrl,
           name: data.projectName,
           githubToken: data.githubToken,
         },
@@ -52,11 +54,11 @@ const CreatePage = () => {
     : true;
 
   return (
-    <div className="flex items-center justify-center gap-12 h-full">
+    <div className="flex h-full items-center justify-center gap-12">
       <img src="/undraw_github.svg" alt="github" className="h-56 w-auto" />
       <div>
         <div>
-          <h1 className="font-semibold text-2xl">
+          <h1 className="text-2xl font-semibold">
             Link your GitHub Repository
           </h1>
           <p className="text-sm text-muted-foreground">
@@ -85,7 +87,7 @@ const CreatePage = () => {
             />
             {!!checkCredits.data && (
               <>
-                <div className="mt-4 bg-orange-50 px-4 py-2 rounded-md border border-orange-200 text-orange-700">
+                <div className="mt-4 rounded-md border border-orange-200 bg-orange-50 px-4 py-2 text-orange-700">
                   <div className="flex items-center gap-2">
                     <Info className="size-4" />
                     <p className="text-sm">
@@ -94,7 +96,7 @@ const CreatePage = () => {
                       for this repository
                     </p>
                   </div>
-                  <p className="text-sm text-blue-600 ml-6">
+                  <p className="ml-6 text-sm text-blue-600">
                     You have <strong>{checkCredits.data?.userCredits}</strong>{" "}
                     credits remaining.
                   </p>

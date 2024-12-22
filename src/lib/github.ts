@@ -18,9 +18,14 @@ type Response = {
 export const getCommitHashes = async (
   githubUrl: string,
 ): Promise<Response[]> => {
-  const [owner, repo] = githubUrl.split("/").slice(-2);
+  let [owner, repo] = githubUrl.split("/").slice(-2);
   if (!owner || !repo) {
     throw new Error("Invalid GitHub URL");
+  }
+
+  // Remove ".git" suffix if it exists
+  if (repo && repo.endsWith(".git")) {
+    repo = repo.slice(0, -4); // Remove the last 4 characters
   }
 
   const { data } = await octokit.rest.repos.listCommits({
