@@ -27,6 +27,7 @@ const DashboardPage = () => {
                 This project is linked to{" "}
                 <Link
                   href={project?.githubUrl ?? ""}
+                  target="_blank"
                   className="inline-flex items-center text-white/80 hover:underline"
                 >
                   {project?.githubUrl}

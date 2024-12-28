@@ -15,11 +15,11 @@ import { Download } from "lucide-react";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY!,
-  authDomain: "gitguru-ph.firebaseapp.com",
-  projectId: "gitguru-ph",
-  storageBucket: "gitguru-ph.firebasestorage.app",
-  messagingSenderId: "685712026525",
-  appId: "1:685712026525:web:b14f88ecf650a753cc5d74",
+  authDomain: "gitguru-a6a7f.firebaseapp.com",
+  projectId: "gitguru-a6a7f",
+  storageBucket: "gitguru-a6a7f.firebasestorage.app", // yzun
+  messagingSenderId: "812920749979",
+  appId: "1:812920749979:web:2ccad8270edeb5285a2b3e",
 };
 
 // Initialize Firebase
