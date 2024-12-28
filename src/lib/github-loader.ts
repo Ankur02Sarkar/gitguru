@@ -54,7 +54,14 @@ export const checkCredits = async (githubUrl: string, githubToken: string) => {
   });
 
   const githubOwner = githubUrl.split("/")[3];
-  const githubRepo = githubUrl.split("/")[4];
+  let githubRepo = githubUrl.split("/")[4];
+  // Remove ".git" suffix if it exists
+  if (githubRepo && githubRepo.endsWith(".git")) {
+    githubRepo = githubRepo.slice(0, -4); // Remove the last 4 characters
+  }
+  console.log("githubOwner : ", githubOwner);
+  console.log("githubRepo : ", githubRepo);
+
   if (!githubOwner || !githubRepo) {
     return 0;
   }
