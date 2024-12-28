@@ -38,7 +38,7 @@ const navItems = [
   },
   {
     title: "Meeting",
-    url: "/meeting",
+    url: "/meetings",
     icon: Presentation,
   },
   {
