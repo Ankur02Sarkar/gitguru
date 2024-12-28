@@ -17,7 +17,7 @@ const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY!,
   authDomain: "gitguru-a6a7f.firebaseapp.com",
   projectId: "gitguru-a6a7f",
-  storageBucket: "gitguru-a6a7f.firebasestorage.app",
+  storageBucket: "gitguru-a6a7f.firebasestorage.app", // yzun
   messagingSenderId: "812920749979",
   appId: "1:812920749979:web:2ccad8270edeb5285a2b3e",
 };
